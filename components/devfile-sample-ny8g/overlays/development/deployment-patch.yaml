@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ny8g
+  namespace: afred-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:89c420d8f64fb16f66609a3637c27359f5567614e52e8bf473d9008032e94ac1
+        name: my-nodejs
+        resources: {}
+status: {}
